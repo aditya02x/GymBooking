@@ -20,7 +20,7 @@ const userSchema = new mongoose.Schema({
     },
     role:{
         type:String,
-        enum:["member","trainer","admin"]
+        enum:["member","trainer","admin"],deafault:"member"
     }
 },{TimeRanges:true})
 
